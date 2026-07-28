@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — The Alcove &amp; Rooms</title>
+<meta name="description" content="Hot and cold drinks, breakfast served all day, and a full lunch menu at The Alcove & Rooms, Elstow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Caveat:wght@600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-arch"><img src="assets/bear.webp" alt=""></span>
+      <span class="brand-name">The Alcove <span class="amp">&amp;</span> Rooms</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="art-studio.html">Art Studio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Freshly made, every day</span>
+      <h1>Our Menu</h1>
+      <p>Breakfast served all day 'til 3:30pm, lunch from 11:30am 'til 3:30pm, and drinks whenever you fancy one.</p>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div class="wrap">
+
+      <div class="menu-tabs">
+        <button class="active" data-target="hot-drinks">Hot Drinks</button>
+        <button data-target="cold-drinks">Cold Drinks</button>
+        <button data-target="breakfast">Breakfast</button>
+        <button data-target="lunch">Lunch</button>
+      </div>
+
+      <!-- Hot Drinks -->
+      <div class="menu-panel active" id="hot-drinks">
+        <div class="menu-block">
+          <h3>Hot Drinks</h3>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <h4>Coffee</h4>
+              <div class="menu-item"><span class="name">Single Espresso</span><span class="price">&pound;2.25</span></div>
+              <div class="menu-item"><span class="name">Double Espresso</span><span class="price">&pound;2.75</span></div>
+              <div class="menu-item"><span class="name">Americano</span><span class="price">&pound;3.25</span></div>
+              <div class="menu-item"><span class="name">Latte</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Cappuccino</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Flat White</span><span class="price">&pound;3.25</span></div>
+              <div class="menu-item"><span class="name">Mocha</span><span class="price">&pound;3.75</span></div>
+            </div>
+            <div class="menu-sub">
+              <h4>Tea &amp; More</h4>
+              <div class="menu-item"><span class="name">English Breakfast</span><span class="price">&pound;2.25</span></div>
+              <div class="menu-item"><span class="name">Herbal</span><span class="price">&pound;2.50</span></div>
+              <div class="menu-item"><span class="name">Chai Latte</span><span class="price">&pound;3.75</span></div>
+              <div class="menu-item"><span class="name">Matcha</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Hot Chocolate</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Deluxe Hot Choco</span><span class="price">&pound;4.25</span></div>
+              <div class="menu-item"><span class="name">Babyccino</span><span class="price">&pound;2.00</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tag-list">
+          <span class="tag-pill">Whole or Skimmed milk included</span>
+          <span class="tag-pill">Oat / Coconut milk +30p</span>
+          <span class="tag-pill">Vanilla, Caramel or Hazelnut syrup +30p</span>
+        </div>
+      </div>
+
+      <!-- Cold Drinks -->
+      <div class="menu-panel" id="cold-drinks">
+        <div class="menu-block">
+          <h3>Iced Coffee</h3>
+          <p class="note">Add cream for +50p!</p>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Iced Latte</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Iced Americano</span><span class="price">&pound;3.75</span></div>
+              <div class="menu-item"><span class="name">Iced Mocha</span><span class="price">&pound;4.00</span></div>
+            </div>
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Iced Chocolate</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Iced Matcha</span><span class="price">&pound;4.25</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Milkshakes &amp; Smoothies</h3>
+          <p class="note">Add cream for +50p!</p>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <h4>Milkshakes</h4>
+              <div class="menu-item"><span class="name">Strawberry</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Vanilla</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Chocolate</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Banana</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Pistachio</span><span class="price">&pound;4.50</span></div>
+            </div>
+            <div class="menu-sub">
+              <h4>Smoothies</h4>
+              <div class="menu-item"><span class="name">Mixed Berries</span><span class="price">&pound;4.00</span></div>
+              <div class="menu-item"><span class="name">Banana &amp; Strawbs</span><span class="price">&pound;4.00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Slushies, Cans &amp; Juice</h3>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <h4>Slushies</h4>
+              <div class="menu-item"><span class="name">Today's Flavour<span class="desc">See counter for today's flavour!</span></span><span class="price">&pound;3.50</span></div>
+              <h4>Cans</h4>
+              <div class="menu-item"><span class="name">Sugar</span><span class="price">&pound;1.75</span></div>
+              <div class="menu-item"><span class="name">Sugar Free</span><span class="price">&pound;1.50</span></div>
+            </div>
+            <div class="menu-sub">
+              <h4>Juice</h4>
+              <div class="menu-item"><span class="name">Orange</span><span class="price">&pound;2.25</span></div>
+              <div class="menu-item"><span class="name">Apple</span><span class="price">&pound;2.25</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breakfast -->
+      <div class="menu-panel" id="breakfast">
+        <p class="note" style="text-align:center; margin-bottom:24px;">Served all day, 9am &ndash; 3:30pm</p>
+
+        <div class="menu-block">
+          <h3>A&ccedil;ai Bowls &mdash; &pound;9.75</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">A blend of a&ccedil;a&iacute;, mixed berries, coconut milk and bananas topped with your choice.</p>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>The Berry One</h4></div>
+              <p>Strawberries, blueberries and raspberries, granola, chia seeds, berry coulis and a drizzle of honey.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>The Banana and Hazelnut Chocolate One</h4></div>
+              <p>Sliced banana, granola, chia seeds, hazelnut chocolate spread, chocolate shavings, and a drizzle of honey.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>The Pistachio One</h4></div>
+              <p>Sliced banana, granola, chia seeds, pistachio spread, crushed pistachios and a drizzle of honey.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Breakfast Bap &mdash; &pound;5.00</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">Choose between bacon, sausage and egg.</p>
+        </div>
+
+        <div class="menu-block">
+          <h3>Bagels &mdash; &pound;8.00</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Smoked Salmon &amp; Cream Cheese</h4></div>
+              <p>Toasted bagel with smoked salmon, cream cheese and chives.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Halloumi &amp; Avocado</h4></div>
+              <p>Toasted bagel with halloumi, avocado and rocket.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Breakfast Stack</h4></div>
+              <p>Toasted bagel with sausage, bacon, fried egg, hashbrown and cheese.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Pancakes &mdash; &pound;9.00</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Bacon &amp; Maple</h4></div>
+              <p>Maple cured streaky bacon and syrup.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Berries &amp; Cream</h4></div>
+              <p>Fresh strawberries, raspberries and blueberries with berry coulis and cream.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Banana and Hazelnut Choc</h4></div>
+              <p>Sliced banana, hazelnut chocolate spread and chocolate shavings.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Pistachio</h4></div>
+              <p>Pistachio sauce, white chocolate and pistachio shavings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="menu-panel" id="lunch">
+        <p class="note" style="text-align:center; margin-bottom:24px;">Served 11:30am &ndash; 3:30pm</p>
+
+        <div class="menu-block">
+          <h3>Toasties &amp; Sandwiches &mdash; &pound;9.50</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">Choose either tiger bread or gluten free, all served with crisps and coleslaw. Make it sourdough +&pound;1.50</p>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Chicken &amp; Caramelised Onion</h4></div>
+              <p>Seasoned chicken thigh with caramelised onions, rocket, gherkins and mayo.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Ham &amp; Cheese</h4></div>
+              <p>Homemade honey mustard ham with Cheddar cheese and mozzarella.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Tuna Mayo</h4></div>
+              <p>Tuna mayonnaise, red onion, Cheddar cheese, mozzarella and sliced gherkins.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Pesto, Mozzarella &amp; Tomato</h4></div>
+              <p>Mozzarella, Cheddar cheese, beef tomato, green pesto and fresh rocket.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Salami, Prosciutto &amp; Mozzarella</h4></div>
+              <p>Salami and prosciutto layered with creamy mozzarella, Cheddar cheese, sun-dried tomatoes, peppery rocket and garlic aioli.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Cheese</h4></div>
+              <p>A rich blend of mozzarella and Cheddar cheese.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Burgers &mdash; &pound;13.00</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">Served in a brioche bun with a portion of chips and homemade coleslaw.</p>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Crispy Chicken</h4></div>
+              <p>Crispy deep-fried chicken fillet topped with lettuce, cheese and mayo.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Beef Smash</h4></div>
+              <p>Two beef patties layered with melted cheese, pickles, ketchup and mustard.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Fish</h4></div>
+              <p>Battered cod fillet topped with cheese, lettuce and tartar sauce.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Loaded Chips</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">Thick-cut chips served in a bowl and loaded with your choice of toppings.</p>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Garlic Parmesan</h4><span class="price">&pound;8.00</span></div>
+              <p>Garlic butter, garlic sauce and parmesan cheese.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Beef Chilli</h4><span class="price">&pound;10.00</span></div>
+              <p>Beef chilli, melted Cheddar cheese and mozzarella.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Crispy Garlic Chicken</h4><span class="price">&pound;10.00</span></div>
+              <p>Crispy chicken, melted Cheddar cheese and mozzarella, spring onions, garlic mayo and crispy onions.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Charcuterie</h4><span class="price">&pound;10.00</span></div>
+              <p>Salami and prosciutto, melted mozzarella, sun-dried tomatoes, parmesan, rocket and creamy aioli.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>The Alcove (All Day) Breakfast &mdash; &pound;12.50</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">Two pork sausages, two rashers of smoked bacon, egg (fried or scrambled), hashbrown, black pudding, mushrooms, baked beans, and buttered toast. Make it sourdough +&pound;1.50</p>
+        </div>
+
+        <div class="menu-block">
+          <h3>Little Cub Meals &mdash; &pound;6.00</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">All served with chips and beans.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Chicken Nuggets</span>
+            <span class="tag-pill">Sausage</span>
+            <span class="tag-pill">Veggie Sausage</span>
+            <span class="tag-pill">Cheese Toastie</span>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Salads &mdash; &pound;7.50</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Caesar</h4></div>
+              <p>Romaine lettuce, creamy Caesar dressing, croutons and parmesan.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Garden</h4></div>
+              <p>Romaine lettuce, mixed leaves, tomatoes, onions and balsamic glaze dressing.</p>
+            </div>
+          </div>
+          <p class="note">Add a topping:</p>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Grilled Chicken Breast &amp; Bacon</span><span class="price">+&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Crispy Chicken</span><span class="price">+&pound;4.00</span></div>
+            </div>
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Halloumi</span><span class="price">+&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Falafel</span><span class="price">+&pound;3.00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Lunch Classics</h3>
+          <div class="dish-list">
+            <div class="dish">
+              <div class="dish-head"><h4>Ham, Eggs &amp; Chips</h4><span class="price">&pound;9.00</span></div>
+              <p>Honey mustard roasted ham, with two fried eggs, chips and bread and butter.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head"><h4>Sausage, Beans &amp; Chips</h4><span class="price">&pound;8.00</span></div>
+              <p>Two pork sausages, baked beans, chips and bread and butter.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Jacket Spuds &mdash; &pound;6.00</h3>
+          <p style="color:var(--ink-soft); margin-top:-6px;">A fluffy oven-baked jacket potato served with butter, mixed leaves and homemade coleslaw.</p>
+          <p class="note">Add a topping:</p>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Cheese</span><span class="price">+&pound;1.00</span></div>
+              <div class="menu-item"><span class="name">Beef Chilli</span><span class="price">+&pound;3.50</span></div>
+            </div>
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Tuna Mayo</span><span class="price">+&pound;2.50</span></div>
+              <div class="menu-item"><span class="name">Beans and Cheese</span><span class="price">+&pound;2.50</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-block">
+          <h3>Sides</h3>
+          <div class="menu-cols">
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Bowl of Chips</span><span class="price">&pound;4.75</span></div>
+              <div class="menu-item"><span class="name">Halloumi Slices</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Onion Rings</span><span class="price">&pound;3.00</span></div>
+              <div class="menu-item"><span class="name">Mozzarella Sticks</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Side Salad</span><span class="price">&pound;3.50</span></div>
+            </div>
+            <div class="menu-sub">
+              <div class="menu-item"><span class="name">Fruit Bowl</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Chicken Bites</span><span class="price">&pound;3.50</span></div>
+              <div class="menu-item"><span class="name">Black Pudding</span><span class="price">&pound;1.50</span></div>
+              <div class="menu-item"><span class="name">Smoked Salmon</span><span class="price">&pound;3.50</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>The Alcove &amp; Rooms</h4>
+        <p>206 High Street, Elstow, Bedfordshire, MK42 9XU</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="art-studio.html">Art Studio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Say hello</h4>
+        <ul>
+          <li><a href="mailto:hello@thealcoveandrooms.co.uk">hello@thealcoveandrooms.co.uk</a></li>
+          <li><a href="https://instagram.com/thealcoveandrooms">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@the.alcove.and.rooms">TikTok</a></li>
+          <li><a href="https://www.facebook.com/Thealcoveandrooms">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> The Alcove &amp; Rooms. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
