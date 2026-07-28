@@ -1,0 +1,200 @@
+{
+  "venue": {
+    "name": "The Alcove & Rooms",
+    "address": "206 High Street, Elstow, Bedfordshire, MK42 9XU",
+    "email": "hello@thealcoveandrooms.co.uk",
+    "social": {
+      "instagram": "https://instagram.com/thealcoveandrooms",
+      "tiktok": "https://www.tiktok.com/@the.alcove.and.rooms",
+      "facebook": "https://www.facebook.com/Thealcoveandrooms"
+    },
+    "tagline": "Your new favourite place.",
+    "intro": "We're passionate about serving quality coffee, delicious food and sweet treats in a cosy, welcoming space where every visit feels like a big bear hug."
+  },
+  "hoursNote": {
+    "breakfast": "Served all day, 9am - 3:30pm",
+    "lunch": "11:30am - 3:30pm"
+  },
+  "drinks": {
+    "hot": {
+      "coffee": [
+        { "item": "Single Espresso", "price": 2.25 },
+        { "item": "Double Espresso", "price": 2.75 },
+        { "item": "Americano", "price": 3.25 },
+        { "item": "Latte", "price": 3.50 },
+        { "item": "Cappuccino", "price": 3.50 },
+        { "item": "Flat White", "price": 3.25 },
+        { "item": "Mocha", "price": 3.75 }
+      ],
+      "teaAndMore": [
+        { "item": "English Breakfast", "price": 2.25 },
+        { "item": "Herbal", "price": 2.50 },
+        { "item": "Chai Latte", "price": 3.75 },
+        { "item": "Matcha", "price": 4.00 },
+        { "item": "Hot Chocolate", "price": 3.50 },
+        { "item": "Deluxe Hot Choco", "price": 4.25 },
+        { "item": "Babyccino", "price": 2.00 }
+      ],
+      "milkOptions": "Whole or Skimmed Milk included. Oat +30p, Coconut +30p",
+      "syrups": "Vanilla, Caramel, Hazelnut +30p each"
+    },
+    "cold": {
+      "iced": [
+        { "item": "Latte", "price": 4.00 },
+        { "item": "Americano", "price": 3.75 },
+        { "item": "Mocha", "price": 4.00 },
+        { "item": "Chocolate", "price": 3.50 },
+        { "item": "Matcha", "price": 4.25 }
+      ],
+      "icedNote": "add cream! +50p",
+      "shakes": [
+        { "item": "Strawberry", "price": 4.00 },
+        { "item": "Vanilla", "price": 4.00 },
+        { "item": "Chocolate", "price": 4.00 },
+        { "item": "Banana", "price": 4.00 },
+        { "item": "Pistachio", "price": 4.50 }
+      ],
+      "shakesNote": "add cream! +50p",
+      "smoothies": [
+        { "item": "Mixed Berries", "price": 4.00 },
+        { "item": "Banana & Strawbs", "price": 4.00 }
+      ],
+      "slushies": {
+        "note": "See counter for today's flavour!",
+        "price": 3.50
+      },
+      "cans": [
+        { "item": "Sugar", "price": 1.75 },
+        { "item": "Sugar Free", "price": 1.50 }
+      ],
+      "juice": [
+        { "item": "Orange", "price": 2.25 },
+        { "item": "Apple", "price": 2.25 }
+      ]
+    }
+  },
+  "breakfast": {
+    "servedAllDay": "9am - 3:30pm",
+    "acaiBowls": {
+      "basePrice": 9.75,
+      "description": "A blend of açaí, mixed berries, coconut milk and bananas topped with your choice.",
+      "options": [
+        {
+          "name": "The Berry One",
+          "description": "Strawberries, blueberries and raspberries, granola, chia seeds, berry coulis and a drizzle of honey."
+        },
+        {
+          "name": "The Banana and Hazelnut Chocolate One",
+          "description": "Sliced banana, granola, chia seeds, hazelnut chocolate spread, chocolate shavings, and a drizzle of honey."
+        },
+        {
+          "name": "The Pistachio One",
+          "description": "Sliced banana, granola, chia seeds, pistachio spread, crushed pistachios and a drizzle of honey."
+        }
+      ]
+    },
+    "breakfastBap": {
+      "price": 5.00,
+      "description": "Choose between bacon, sausage and egg."
+    },
+    "bagels": {
+      "basePrice": 8.00,
+      "options": [
+        { "name": "Smoked Salmon & Cream Cheese", "description": "Toasted Bagel with Smoked Salmon, Cream Cheese and chives." },
+        { "name": "Halloumi & Avocado", "description": "Toasted Bagel with Halloumi, Avocado and Rocket." },
+        { "name": "Breakfast Stack", "description": "Toasted Bagel with sausage, bacon, fried egg, hashbrown and cheese." }
+      ]
+    },
+    "pancakes": {
+      "basePrice": 9.00,
+      "options": [
+        { "name": "Bacon & Maple", "description": "Maple cured streaky bacon and syrup." },
+        { "name": "Berries & Cream", "description": "Fresh strawberries, raspberries and blueberries with berry coulis and cream." },
+        { "name": "Banana and Hazelnut Choc", "description": "Toasted Bagel with sausage, bacon, fried egg, hashbrown and cheese." },
+        { "name": "Pistachio", "description": "Pistachio sauce, white chocolate and pistachio shavings." }
+      ]
+    }
+  },
+  "lunch": {
+    "hours": "11:30am - 3:30pm",
+    "toastieOrSandwich": {
+      "basePrice": 9.50,
+      "note": "Choose either Tiger Bread or GF, all served with crisps and coleslaw. Make it sourdough +£1.50",
+      "options": [
+        { "name": "Chicken & Caramelised Onion", "description": "Seasoned chicken thigh with caramelised onions, rocket and gherkins and mayo." },
+        { "name": "Ham & Cheese", "description": "Homemade honey mustard ham and Cheddar cheese and mozzarella." },
+        { "name": "Tuna Mayo", "description": "Tuna mayonnaise, red onion, Cheddar cheese, mozzarella and sliced gherkins." },
+        { "name": "Pesto, Mozzarella & Tomato", "description": "Mozzarella, Cheddar cheese, beef tomato, green pesto and fresh rocket." },
+        { "name": "Salami, Prosciutto & Mozzarella", "description": "Salami and prosciutto layered with creamy mozzarella, Cheddar cheese, sun-dried tomatoes, peppery rocket and garlic aioli." },
+        { "name": "Cheese", "description": "A rich blend of mozzarella and Cheddar cheese." }
+      ]
+    },
+    "burgers": {
+      "basePrice": 13.00,
+      "note": "Served in a brioche bun with a portion of chips and homemade coleslaw.",
+      "options": [
+        { "name": "Crispy Chicken", "description": "Crispy deep-fried chicken fillet topped with lettuce, cheese and mayo." },
+        { "name": "Beef Smash", "description": "Two beef patties layered with melted cheese, pickles, ketchup and mustard." },
+        { "name": "Fish", "description": "Battered cod fillet topped with cheese, lettuce and tartar sauce." }
+      ]
+    },
+    "loadedChips": {
+      "note": "Thick-cut chips served in a bowl and loaded with your choice of toppings.",
+      "options": [
+        { "name": "Garlic Parmesan", "price": 8.00, "description": "Garlic butter, garlic sauce and parmesan cheese." },
+        { "name": "Beef Chilli", "price": 10.00, "description": "Beef chilli, melted Cheddar cheese and mozzarella." },
+        { "name": "Crispy Garlic Chicken", "price": 10.00, "description": "Crispy chicken, melted Cheddar cheese and mozzarella, spring onions, garlic mayo and crispy onions." },
+        { "name": "Charcuterie", "price": 10.00, "description": "Salami and prosciutto, melted mozzarella, sun-dried tomatoes, parmesan, rocket and creamy aioli." }
+      ]
+    },
+    "allDayBreakfast": {
+      "name": "The Alcove (All Day) Breakfast",
+      "price": 12.50,
+      "description": "Two pork sausages, two rashers of smoked bacon, egg (fried or scrambled), hashbrown, black pudding, mushrooms, baked beans, and buttered toast.",
+      "note": "Make it sourdough +£1.50"
+    },
+    "littleCubMeals": {
+      "price": 6.00,
+      "note": "Kids meals all served with chips and beans.",
+      "options": ["Chicken Nuggets", "Sausage", "Veggie Sausage", "Cheese Toastie"]
+    },
+    "salad": {
+      "basePrice": 7.50,
+      "options": [
+        { "name": "Caesar", "description": "Romaine lettuce, creamy Caesar dressing, croutons and parmesan." },
+        { "name": "Garden", "description": "Romaine lettuce, mixed leaves, tomatoes, onions and Balsamic Glaze dressing." }
+      ],
+      "toppings": [
+        { "item": "Grilled Chicken Breast & Bacon", "price": 3.50 },
+        { "item": "Crispy Chicken", "price": 4.00 },
+        { "item": "Halloumi", "price": 3.50 },
+        { "item": "Falafel", "price": 3.00 }
+      ]
+    },
+    "classics": [
+      { "name": "Ham, Eggs & Chips", "price": 9.00, "description": "Honey mustard roasted ham, with two fried eggs, chips and bread and butter." },
+      { "name": "Sausage, Beans & Chips", "price": 8.00, "description": "Two pork sausages, baked beans, chips and bread and butter." }
+    ],
+    "spuds": {
+      "basePrice": 6.00,
+      "description": "A fluffy oven-baked jacket potato served with butter, served with mixed leaves and homemade coleslaw.",
+      "toppings": [
+        { "item": "Cheese", "price": 1.00 },
+        { "item": "Beef Chilli", "price": 3.50 },
+        { "item": "Tuna Mayo", "price": 2.50 },
+        { "item": "Beans and Cheese", "price": 2.50 }
+      ]
+    },
+    "sides": [
+      { "item": "Bowl of Chips", "price": 4.75 },
+      { "item": "Halloumi Slices", "price": 3.50 },
+      { "item": "Onion Rings", "price": 3.00 },
+      { "item": "Mozzarella Sticks", "price": 3.50 },
+      { "item": "Side Salad", "price": 3.50 },
+      { "item": "Fruit Bowl", "price": 3.50 },
+      { "item": "Chicken Bites", "price": 3.50 },
+      { "item": "Black Pudding", "price": 1.50 },
+      { "item": "Smoked Salmon", "price": 3.50 }
+    ]
+  }
+}
