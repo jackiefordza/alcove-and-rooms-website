@@ -323,6 +323,102 @@ nav.main-nav a[aria-current="page"] {
   .story-grid .hero-frame { order: -1; max-width: 320px; margin: 0 auto; }
 }
 
+/* ---------- Photo gallery (homepage) ---------- */
+
+.gallery {
+  padding: 64px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.gallery-frame {
+  border-radius: var(--arch-radius) var(--arch-radius) var(--radius-card) var(--radius-card);
+  overflow: hidden;
+  border: 3px solid var(--ink);
+  aspect-ratio: 4 / 5;
+  background: var(--teal-tint);
+}
+
+.gallery-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+.gallery-follow {
+  text-align: center;
+  margin-top: 28px;
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  color: var(--teal);
+}
+
+.gallery-follow a { color: var(--rust); text-decoration: none; font-weight: 700; }
+.gallery-follow a:hover { text-decoration: underline; }
+
+/* ---------- Menu block photo ---------- */
+
+.menu-block-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 2px dashed var(--rust-tint);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.menu-block-head h3 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.menu-photo {
+  width: 84px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: var(--arch-radius) var(--arch-radius) 10px 10px;
+  overflow: hidden;
+  border: 3px solid var(--ink);
+}
+
+.menu-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- Small photo strip (about page) ---------- */
+
+.photo-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 640px;
+  margin: 40px auto 0;
+}
+
+@media (max-width: 600px) {
+  .photo-strip { grid-template-columns: 1fr; max-width: 320px; }
+}
+
+.photo-strip figure {
+  margin: 0;
+}
+
+.photo-strip .gallery-frame {
+  aspect-ratio: 3 / 4;
+  margin-bottom: 10px;
+}
+
+.photo-strip figcaption {
+  text-align: center;
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  color: var(--teal);
+}
+
 /* ---------- Generic page sections ---------- */
 
 .page-hero {
@@ -473,6 +569,14 @@ section.content-block { padding: 20px 0 60px; }
   background: var(--rust-tint);
   display: flex; align-items: center; justify-content: center;
   font-size: 2.4rem;
+}
+
+.coming-soon .announcement-image {
+  width: 170px;
+  margin: 0 auto 20px;
+  border-radius: var(--arch-radius) var(--arch-radius) 10px 10px;
+  overflow: hidden;
+  border: 3px solid var(--ink);
 }
 
 /* ---------- Contact ---------- */
