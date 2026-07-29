@@ -36,4 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) target.classList.add('active');
     });
   });
+
+  // Fade-and-rise elements into view as you scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach((el) => io.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+  }
 });
