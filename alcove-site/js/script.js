@@ -2,11 +2,25 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
+  const backdrop = document.querySelector('.nav-backdrop');
+
+  const setNavOpen = (open) => {
+    nav.classList.toggle('open', open);
+    if (backdrop) backdrop.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open ? '✕' : '☰';
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      const expanded = nav.classList.contains('open');
-      toggle.setAttribute('aria-expanded', String(expanded));
+      setNavOpen(!nav.classList.contains('open'));
+    });
+    if (backdrop) {
+      backdrop.addEventListener('click', () => setNavOpen(false));
+    }
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setNavOpen(false));
     });
   }
 
