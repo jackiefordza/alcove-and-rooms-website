@@ -147,19 +147,48 @@ nav.main-nav a[aria-current="page"] {
   cursor: pointer;
 }
 
+.nav-backdrop {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .nav-toggle { display: block; }
-  nav.main-nav {
-    display: none;
-    position: absolute;
-    left: 0; right: 0; top: 100%;
-    background: var(--cream);
-    border-bottom: 3px solid var(--ink);
+
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(58, 42, 31, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 90;
   }
-  nav.main-nav.open { display: block; }
-  nav.main-nav ul { flex-direction: column; padding: 12px 24px 20px; }
-  .site-header { position: relative; }
-  .site-header.menu-open .wrap { position: relative; }
+
+  .nav-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(78vw, 300px);
+    background: var(--cream);
+    border-right: 3px solid var(--ink);
+    box-shadow: var(--shadow-soft);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+    padding-top: 90px;
+    overflow-y: auto;
+  }
+
+  nav.main-nav.open { transform: translateX(0); }
+  nav.main-nav ul { flex-direction: column; padding: 12px 24px 20px; gap: 4px; }
+  nav.main-nav a { display: block; }
 }
 
 /* ---------- Buttons ---------- */
@@ -614,6 +643,17 @@ section.content-block { padding: 20px 0 60px; }
   text-decoration: none;
   font-weight: 700;
   background: var(--cream);
+  color: var(--ink);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.social-row a svg { width: 22px; height: 22px; }
+
+.social-row a:hover,
+.social-row a:focus-visible {
+  background: var(--rust);
+  color: var(--paper);
+  outline: none;
 }
 
 .map-frame {
