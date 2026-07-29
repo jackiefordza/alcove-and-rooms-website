@@ -139,7 +139,9 @@ nav.main-nav a[aria-current="page"] {
 
 .nav-toggle {
   display: none;
-  background: none;
+  position: relative;
+  z-index: 110;
+  background: var(--cream);
   border: 2px solid var(--ink);
   border-radius: 10px;
   padding: 6px 10px;
@@ -173,13 +175,13 @@ nav.main-nav a[aria-current="page"] {
   nav.main-nav {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: min(78vw, 300px);
     background: var(--cream);
-    border-right: 3px solid var(--ink);
+    border-left: 3px solid var(--ink);
     box-shadow: var(--shadow-soft);
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 100;
     padding-top: 90px;
