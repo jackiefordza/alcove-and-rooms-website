@@ -37,6 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Highlight today in any opening-hours list
+  const dayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const today = dayKeys[new Date().getDay()];
+  document.querySelectorAll(`.hours-row[data-day="${today}"]`).forEach((row) => {
+    row.classList.add('is-today');
+  });
+
   // Fade-and-rise elements into view as you scroll
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
