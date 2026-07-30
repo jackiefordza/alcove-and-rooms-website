@@ -69,4 +69,33 @@ document.addEventListener('DOMContentLoaded', () => {
       revealEls.forEach((el) => el.classList.add('is-visible'));
     }
   }
+
+  // Scroll-linked parallax drift: elements drift opposite to scroll
+  // direction, proportional to how far they are from viewport centre —
+  // this is what makes them visibly move as you scroll, not just once.
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const parallaxEls = document.querySelectorAll('[data-parallax]');
+  if (parallaxEls.length && !prefersReducedMotion) {
+    let ticking = false;
+    const updateParallax = () => {
+      const viewportCenter = window.innerHeight / 2;
+      parallaxEls.forEach((el) => {
+        const speed = parseFloat(el.dataset.parallax) || 0.15;
+        const rect = el.getBoundingClientRect();
+        const elCenter = rect.top + rect.height / 2;
+        const offset = (viewportCenter - elCenter) * speed;
+        el.style.transform = `translateY(${offset.toFixed(1)}px)`;
+      });
+      ticking = false;
+    };
+    const requestTick = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    };
+    updateParallax();
+    window.addEventListener('scroll', requestTick, { passive: true });
+    window.addEventListener('resize', requestTick);
+  }
 });
