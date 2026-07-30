@@ -736,6 +736,36 @@ section.content-block { padding: 20px 0 60px; }
   outline: none;
 }
 
+.hours-list {
+  display: grid;
+  gap: 4px;
+  font-size: 0.95rem;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 2px 0;
+}
+
+.hours-row .day { color: var(--ink-soft); }
+.hours-row .time { font-weight: 700; }
+
+.hours-row.is-today .day,
+.hours-row.is-today .time {
+  color: var(--rust);
+  font-weight: 700;
+}
+
+.site-footer .hours-list { margin-top: 14px; font-size: 0.9rem; }
+.site-footer .hours-row .day { color: var(--teal-tint); opacity: 0.75; }
+.site-footer .hours-row .time { color: var(--paper); }
+.site-footer .hours-row.is-today .day,
+.site-footer .hours-row.is-today .time {
+  color: var(--honey);
+}
+
 .map-frame {
   border: 3px solid var(--ink);
   border-radius: var(--radius-card);
