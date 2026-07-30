@@ -44,6 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
     row.classList.add('is-today');
   });
 
+  // Frost the header once the page has scrolled past the top
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const setScrolled = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+    setScrolled();
+    window.addEventListener('scroll', setScrolled, { passive: true });
+  }
+
   // Fade-and-rise elements into view as you scroll
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
